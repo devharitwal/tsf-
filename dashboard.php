@@ -25,45 +25,56 @@
     <br>
     <!--  navbar end  -->
 
-    <!-- layout and components -->
+
+
+
+    <!-- middleware file -->
+    <?php
+
+    // connection setup done
+    require "config/config.php";
+    // connect transfer files 
+
+
+    require "sql/dashboardinfo.php";
+
+    ?>
+
+    <!-- take the data from contacts db and then print the values -->
     <div class="container">
         <div class="jumbotron " style="background-color: #fff;">
             <h6 class="display-4 font-weight-bold ">Hi, Welcome Back :) </h6>
             <p class="lead ">Dev Haritwal</p>
 
-           
+
             <hr class="my-4">
             <!-- all the transactions fetched from db -->
-            <div>
+            <div class="container">
                 <table class="table">
                     <thead>
                         <tr style="color: #fff; background-color: #6c7ae0;">
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
+                            
+
                             <th scope="col">Amount</th>
                             <th scope="col">UPI</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <!-- make the amount dynamic here  -->
-                            <td> <?php echo "$"; ?>1000</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td> <?php echo "$"; ?>1000</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td> <?php echo "$"; ?>1000</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <?php
+                        // sql statement to get the data from database 
+
+
+                        while ($row = mysqli_fetch_assoc($result)) {
+
+                            $upis = $row['upi'];
+                            $amount = $row['amount'];
+                        
+                        echo " <tr>
+                                 <td>  $amount  </td>
+                                <td> $upis </td> 
+                                </tr>";
+                        }
+                        ?>
                     </tbody>
                 </table>
 
