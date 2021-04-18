@@ -1,17 +1,26 @@
+
 <?php
 
-require "config/config.php";
-
-require "sql/transferform.php";
+  require $_SERVER['DOCUMENT_ROOT'] . "/tsf/config/config.php";
 
 
-$sql = "INSERT INTO `transaction` ( `upi`, `amount`) VALUES ('$upid', '$amount');";
-$result = mysqli_query($conn, $sql);
+// // take the input and save to db
+// {
+//     $sql = "INSERT INTO `transaction` (`sno`, `upi`, `amount`) VALUES ('1', '@ayush', '1000');";
+//     $result = mysqli_query($conn, $sql);
+//     if ($result) 
+//     {
+//         echo '<div class="alert alert-success" role="alert"> Completed Transaction</div>';
+//         header("location:../dashboard.php");
+//     }
+//      else 
+    
+//     {
+//         echo "not added to db ";
+//     }
+// }
 
 
-
-
-// sql to save the data to database 
 
 
 ?>
