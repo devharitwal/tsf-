@@ -41,19 +41,22 @@
                 <h4 class="animation a2">Take care of you and yours at home, and we can take care of you online.</h4>
             </div>
 
+
             <!-- include the config for connection setup -->
             <?php
 
-
+            // middle ware files 
             require "config/config.php";
             require "sql/transferget.php";
-
+            
 
 
 
             ?>
 
+
             <!-- form submission -->
+           
 
 
 
@@ -61,18 +64,16 @@
                 <div>
                     <form action="dashboard.php" method="POST">
                         <select class="form-field animation a3 " placeholder="Username" name="upi" id="upi">
-                            <option name= "upi"> @UPI</option>
+                            <option> @UPI</option>
                             <!-- fetch record from db -->
                             <?php
                             while ($row = mysqli_fetch_assoc($result)) {
                                 $upid = $row['upi'];
                                 echo "  <option> $upid <br>  </option> ";
                             }
-
-
-
-
                             ?>
+
+
                             </option>
                         </select>
 
@@ -81,9 +82,20 @@
                 <button class="animation a6">Transfer</button>
 
                 <br>
+
+
+                <?php 
+                
+                require "sql/transferform.php";
+                ?>
                 </form>
 
-               
+
+
+
+
+
+
 
             </div>
         </div>

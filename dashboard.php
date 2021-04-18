@@ -49,14 +49,16 @@
 
             <hr class="my-4">
             <!-- all the transactions fetched from db -->
-            <div>
+            <div class="container">
                 <table class="table">
                     <thead>
                         <tr style="color: #fff; background-color: #6c7ae0;">
                             
 
-                            <th class="col-lg-6" scope="col">Amount</th>
-                            <th scope="col-lg-6">UPI</th>
+
+                            <th scope="col">Amount</th>
+                            <th scope="col">UPI</th>
+
                         </tr>
                     </thead>
                     <tbody>
