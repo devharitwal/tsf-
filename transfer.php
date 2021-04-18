@@ -41,6 +41,7 @@
                 <h4 class="animation a2">Take care of you and yours at home, and we can take care of you online.</h4>
             </div>
 
+
             <!-- include the config for connection setup -->
             <?php
 
@@ -52,6 +53,7 @@
 
 
             ?>
+
 
             <!-- form submission -->
            

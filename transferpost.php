@@ -1,6 +1,7 @@
 <?php
 
 require "config/config.php";
+
 require "sql/transferform.php";
 
 
@@ -10,6 +11,7 @@ $result = mysqli_query($conn, $sql);
 
 
 
-
 // sql to save the data to database 
+
+
 ?>

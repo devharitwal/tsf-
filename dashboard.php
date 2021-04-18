@@ -55,8 +55,10 @@
                         <tr style="color: #fff; background-color: #6c7ae0;">
                             
 
+
                             <th scope="col">Amount</th>
                             <th scope="col">UPI</th>
+
                         </tr>
                     </thead>
                     <tbody>
