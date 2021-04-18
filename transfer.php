@@ -27,40 +27,64 @@
     ?>
     <br>
     <!--  navbar end  -->
-    <!-- layout  -->
+
     <!-- form  -->
 
+
+
+
+    <!-- take the input values from the form and save it to the database called history -->
     <div class="container">
         <div class="left">
             <div class="header">
                 <h2 class="animation a1">Transfer Money</h2>
                 <h4 class="animation a2">Take care of you and yours at home, and we can take care of you online.</h4>
             </div>
+
+            <!-- include the config for connection setup -->
+            <?php
+
+
+            require "config/config.php";
+            require "sql/transferget.php";
+
+
+
+
+            ?>
+
+            <!-- form submission -->
+
+
+
             <div class="form">
                 <div>
+                    <form action="dashboard.php" method="POST">
+                        <select class="form-field animation a3 " placeholder="Username" name="upi" id="upi">
+                            <option name= "upi"> @UPI</option>
+                            <!-- fetch record from db -->
+                            <?php
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $upid = $row['upi'];
+                                echo "  <option> $upid <br>  </option> ";
+                            }
 
-                    <select class="form-field animation a3 " placeholder="Username" name="username" id="username">
-                        <option value="username "> Username</option>
-                        <option value="Names"> <?php echo "@"; ?>Dev Haritwal
-
-                            <!--  this place will contain the php code from the database for transfer names -->
-                            <!--  redirect the user to the dashboard as soon as clicked in transfer button -->
-                        </option>
 
 
-                    </select>
+
+                            ?>
+                            </option>
+                        </select>
 
                 </div>
-                <input type="text" class="form-field animation a4" placeholder=" $ Amount">
-                <button class="animation a6" onclick="window.location.href='/tsf/dashboard.php';">Transfer</button>
+                <input name="amount" type="text" class="form-field animation a4" placeholder=" $ Amount">
+                <button class="animation a6">Transfer</button>
 
                 <br>
-                <div class="alert alert-warning" role="alert">
-                    <?php
-                    //  if payment succes show this message else tell not success
+                </form>
 
-                    ?>
-                </div>
+               
+
             </div>
         </div>
         <div class="right"> </div>
@@ -69,8 +93,12 @@
 
 
 
-
     <!-- form ends  -->
+
+
+
+
+
 
 
     <br>
