@@ -63,7 +63,7 @@
                             <div class="card-body text-white">
                                 <h5 class="card-title font-italic">Powering your ideas.</h5>
                                 <p class="card-text">The simple way to send or receive money with anyone</p>
-                                <a href="transfer2.php" class=" btn  btn-light ">Get Started </a>
+                                <a href="transfer.php" class=" btn  btn-light ">Get Started </a>
                             </div>
                         </div>
                     </div>

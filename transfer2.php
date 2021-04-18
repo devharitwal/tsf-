@@ -19,8 +19,6 @@
 
 <body>
 
-
-
     <?php
 
     include 'navbar.php';
@@ -33,6 +31,7 @@
 
 
     ?>
+
 
 
     <?php
@@ -60,6 +59,7 @@
     }
 
     ?>
+
 
     <!-- Form-->
     <div class="form">
@@ -103,8 +103,9 @@
                         <button type="submit">Transfer</button>
 
 
+
                     </div>
-                    
+
                 </form>
 
 
@@ -121,6 +122,7 @@
     <!-- footer end  -->
 
     <?php
+
     // if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     //     //upis -- selected upi
@@ -142,6 +144,7 @@
 
     //     }
     // }
+
 
     ?>
 
