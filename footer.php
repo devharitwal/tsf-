@@ -1,5 +1,5 @@
 <section>
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <footer class="text-center text-white" style="background-color: #ffff;">
 
         <!-- Copyright -->
         <div class="text-center text-dark ">
@@ -9,7 +9,8 @@
             <a class="text-dark" href=" https://github.com/devharitwal">Github </a>
             <br>
 
-            <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/join-us/internship-positions/"> Made For the Sparks Foundation Internship </a>
+            <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/join-us/internship-positions/"> Made
+                For the Sparks Foundation Internship </a>
         </div>
         <!-- Copyright -->
     </footer>

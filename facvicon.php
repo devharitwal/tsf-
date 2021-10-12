@@ -1,2 +1,1 @@
- 
-    <link rel="icon" href="images/favicon.ico" type="image/ico">
+ <link rel="icon" href="images/favicon.ico" type="image/ico">
