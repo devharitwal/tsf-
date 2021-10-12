@@ -9,7 +9,8 @@
             <a class="text-dark" href=" https://github.com/devharitwal">Github </a>
             <br>
 
-            <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/join-us/internship-positions/"> Made For the Sparks Foundation Internship </a>
+            <a class="text-dark" href="https://www.thesparksfoundationsingapore.org/join-us/internship-positions/"> Made
+                For the Sparks Foundation Internship </a>
         </div>
         <!-- Copyright -->
     </footer>
