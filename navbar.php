@@ -11,19 +11,20 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#">About</a>
+                    <a class="nav-link font-weight-bold" href="learn.php">About</a>
 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#">Contact</a>
+                    <a class="nav-link font-weight-bold" target="_blank"
+                        href="https://www.linkedin.com/in/devharitwal/">Contact</a>
                 </li>
 
 
             </ul>
 
-            <div>
-                <a class="navbar-brand font-weight-bold  text-primary    " href="index.php">
-                    <h2>
+            <div class="d-flex justify-content-center">
+                <a class="navbar-brand font-weight-bold  text-primary   " href="index.php">
+                    <h2 class="mr-4">
                         <img src="images/DRH.svg" alt="drh">
                     </h2>
 
@@ -34,7 +35,7 @@
                 <ul class="navbar-nav">
                     <li class=" nav-item">
                         <a class="btn text-white btn-md m-1 " style="background-color: black;" rel="noopener noreferrer"
-                            href="#" role="button">Login</a>
+                            href="login.php" role="button">Login</a>
                     </li>
                 </ul>
 

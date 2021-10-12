@@ -41,38 +41,66 @@
 
 
 
+    <section>
 
-    <!-- cards  -->
-    <div class="container p-4">
+        <div class="container p-3">
+            <div class="card p-4  power">
+                <div class="row">
+                    <div class="col-lg-12  col-sm-12">
+                        <div class="card-body text-white">
 
-
-
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="card p-4" style="background: #00d2ff;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-                        background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    ">
-                    <div class="card-body text-white">
-                        <h5 class="card-title font-italic ml-3">Powering your ideas.</h5>
-                        <p class="card-text ml-3">The simple way to send or receive money with anyone</p>
-                        <a href="transfer.php" class=" btn  btn-light ml-3 ">Get Started </a>
+                            <h5 class="card-title font-italic ml-3">Powering your ideas.</h5>
+                            <p class="card-text ml-3">The simple way to send or receive money with anyone</p>
+                            <a href="transfer.php" class=" btn  btn-light ml-3 ">Get Started </a>
+                        </div>
                     </div>
+
                 </div>
+
+
             </div>
 
-            <div class="col-sm-6">
-                <div class="card bg-warning p-4">
-                    <div class="card-body text-white ">
-                        <h5 class="card-title ml-3  font-italic">Ready for tomorrow?</h5>
-                        <p class="card-text ml-3">Manage all of your transactions at one place. </p>
-                        <a href="dashboard.php" class="btn btn-light ml-3">Manage Now </a>
+        </div>
+
+
+    </section>
+
+
+    <!-- cards  -->
+
+
+
+    <section>
+
+        <div class="container p-3">
+            <div class="row">
+
+
+                <div class="col-sm-6 col-lg-12">
+                    <div class="card bg-warning p-4">
+                        <div class="card-body text-white ">
+                            <h5 class="card-title ml-3  font-italic">Ready for tomorrow?</h5>
+                            <p class="card-text ml-3">Manage all of your transactions at one place. </p>
+                            <a href="dashboard.php" class="btn btn-light ml-3">Manage Now </a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
 
-    </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
     </div>
 
     <!-- footer -->
