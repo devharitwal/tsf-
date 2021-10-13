@@ -1,3 +1,16 @@
+/*  index  */
+
+#hero .hero-div {
+    height: 70vh;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 15px;
+}
+
+
 #sally15 {
     height: auto;
     width: 50%;

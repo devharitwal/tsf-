@@ -46,7 +46,9 @@ require  "navbar.php";
                         </form>
                     </div>
 
-                    <div class="pt-3" id="privacy"><a href="#">Privacy and Terms of Service</a></div>
+                    <div class="pt-3" id="privacy"><a href="#">Privacy</a>
+                        & <a href="#"> Terms of Service</a>
+                    </div>
 
                     <a href="#" class="btn text-white mt-4 login-btn">
                         Login
