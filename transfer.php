@@ -5,7 +5,7 @@ require "header.php";
 
 
 <style>
-    <?php include "css/transfer.css";
+    <?php include "static/css/transfer.css";
     ?>
 </style>
 
@@ -42,7 +42,7 @@ require "header.php";
 
             echo  '<div class= "container">
                             <div class="alert alert-warning alert-dismissible fade show">
-                                <strong> Limit Warning!</strong> Please fill out all the required fields before proceeding.
+                                <strong> Limit Warning!</strong> Cannot proceed with the transaction.
                                      <button type="button" class="close" data-dismiss="alert">&times;</button>
                             </div>
                         </div>';

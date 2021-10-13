@@ -11,12 +11,11 @@
 <!--  layout  -->
 <div class="container">
 
-
     <div class=" jumbotron jumbotron-fluid" style="background-color: #4158D0;
                 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
             ">
         <div class="container text-white">
-            <h1 class="display-4 ml-4 font-weight-bold ">Money. Balance both.</h1>
+            <h1 class="display-4 ml-4 font-weight-bold font-italic ">Money. Balance both.</h1>
 
             <p class="lead ml-4">We are here to help.</p>
 

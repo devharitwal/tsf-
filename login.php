@@ -30,7 +30,14 @@ require  "navbar.php";
                         Be incharge of your money.
                     </h1>
 
-                    <p>Join 7 Million users today </p>
+                    <p>
+                        Join 7 Million users today
+                    </p>
+
+
+
+
+
                     <div class="form pt-4">
                         <form action="#">
                             <input type="email" required name="email" id="username" placeholder="Email">
@@ -39,19 +46,21 @@ require  "navbar.php";
                         </form>
                     </div>
 
+                    <div class="pt-3" id="privacy"><a href="#">Privacy and Terms of Service</a></div>
 
-                    <a href="#" class="btn text-white mt-4 control">
+                    <a href="#" class="btn text-white mt-4 login-btn">
                         Login
                     </a>
 
 
 
 
+                    <!-- 
+                    <a href="#" class=" btn btn-outline-primary mt-4 signup-btn ">
+                        Sign Up
+                    </a> -->
 
-                    <!--  form elements -->
-                    <!-- <label class="pr-4 mr-4" for="username">Username</label>
 
-                    <input type="text" name="username" id="username"> -->
                 </div>
 
             </div>

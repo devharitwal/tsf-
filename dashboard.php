@@ -39,7 +39,7 @@ require "header.php";
 
             <hr class="my-4">
             <!-- all the transactions fetched from db -->
-            <div class="container-md p-1">
+            <div class="container-md   p-1">
                 <table class="table border">
                     <thead>
                         <tr style="color: #fff; background-color: #6c7ae0; ">

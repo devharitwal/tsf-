@@ -1,5 +1,5 @@
 
 $("#nightMode").click(function () {
 
-    // alert("clicked");
+    // alert("clcked");
 });

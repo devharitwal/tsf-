@@ -27,7 +27,7 @@
                 <div class="d-flex justify-content-center mr-4">
                     <a class="navbar-brand font-weight-bold  text-primary   " href="index.php">
                         <h2>
-                            <img src="images/DRH.svg" alt="drh">
+                            <img src="static/images/DRH.svg" alt="drh">
                         </h2>
 
                     </a>
@@ -40,7 +40,7 @@
 
                         <li class=" nav-item">
                             <div class="mt-2 mr-2">
-                                <img id="nightMode" src="./images/moon.png" alt="">
+                                <img id="nightMode" src="static/images/moon.png" alt="mode">
                             </div>
                         </li>
 

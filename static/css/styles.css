@@ -33,23 +33,53 @@
     max-height: auto;
 }
 
+#privacy {
+
+    font-size: 14px;
+
+}
+
+
+.login-form-elements {
+    height: 100vh;
+
+}
+
 
 .form-para {
     width: 400px;
 }
 
-.control {
+.login-btn {
 
-    padding-inline: 2.25em;
+    padding-inline: 2.65em;
+
 
     background-color: black;
 }
 
-.control:hover {
+.signup-btn {
+
+
+    padding-inline: 2.25em;
+
+
+    background-color: white;
+}
+
+.login-btn:hover {
     transition: ease-in-out 0.25s;
 
 
     background-color: blueviolet;
+}
+
+.signup-btn:hover {
+    transition: ease-in-out 0.25s;
+
+
+    color: white;
+
 }
 
 
@@ -72,4 +102,17 @@
     height: 60px;
     /* Height of the footer */
     background: #6cf;
+}
+
+
+/*  dashboard  */
+
+/*  transaction table  */
+
+
+.table {
+    width: 550px;
+    height: 150px;
+    overflow: scroll;
+
 }
