@@ -5,6 +5,8 @@
 }
 
 
+
+
 .sticky {
     position: sticky;
     top: 15px;
@@ -128,4 +130,21 @@
     height: 150px;
     overflow: scroll;
 
+}
+
+
+
+/* footer  */
+
+
+
+.footer-div {
+    background-color: black;
+    color: white;
+
+}
+
+
+footer {
+    color: white;
 }
