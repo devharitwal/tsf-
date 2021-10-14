@@ -1,5 +1,10 @@
 /*  index  */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 #hero .hero-div {
     height: 70vh;
 }
@@ -23,6 +28,63 @@
     background-color: black;
 }
 
+
+
+/* hero video  */
+
+.hero-video-section {
+
+
+    position: relative;
+    z-index: -1;
+
+}
+
+
+
+.hero-div video {
+    opacity: 0.5;
+}
+
+
+
+
+#hero-video-heading {
+    position: absolute;
+    z-index: 100;
+    left: 25%;
+    top: 25%;
+
+    color: white;
+    padding: 7px;
+
+
+    font-size: 15rem;
+}
+
+#hero-video-para {
+    position: absolute;
+    z-index: 100;
+    left: 40%;
+    top: 70%;
+
+    color: white;
+
+    padding: 7px;
+
+
+    font-size: 3rem;
+}
+
+
+
+/* .color-overlay {
+    position: absolute;
+    background-color: white;
+
+    opacity: 0.5;
+
+} */
 
 
 

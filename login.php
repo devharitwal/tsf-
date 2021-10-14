@@ -8,10 +8,10 @@
 
 
 
-require "header.php";
+require "partials/header.php";
 
 
-require  "navbar.php";
+require  "partials/navbar.php";
 
 
 
@@ -89,5 +89,5 @@ require  "navbar.php";
 
 
 
-<?php require "footer.php";
+<?php require "partials/footer.php";
  ?>

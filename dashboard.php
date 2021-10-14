@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require "partials/header.php";
 ?>
 
 <body>
@@ -8,7 +8,7 @@ require "header.php";
     <!-- navbar  -->
     <?php
 
-    include 'navbar.php';
+    include 'partials/navbar.php';
     ?>
     <br>
     <!--  navbar end  -->
@@ -89,21 +89,8 @@ require "header.php";
     <!-- layout end  -->
 
     <!-- footer -->
-    <div class="container">
-        <?php
 
-        include 'footer.php';
+    <?php
+
+        include 'partials/footer.php';
         ?>
-    </div>
-
-    <!-- footer end  -->
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-
-</body>
-
-</html>

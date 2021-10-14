@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TSF BANK</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <?php
-    include  'facvicon.php';
-
-    ?>
-
-</head>
+require "partials/header.php";
+require 'partials/navbar.php';
+?>
 
 <body>
-
     <br>
-    <!-- navbar  -->
-
-    <?php
-
-    include 'navbar.php';
-    ?>
-
-    <br>
-
     <div class="container ">
         <div class="jumbotron" style="background-color: #00DBDE;
 background-image: linear-gradient(11deg, #00DBDE 0%, #FC00FF 100%);
@@ -65,34 +44,6 @@ background-image: linear-gradient(11deg, #00DBDE 0%, #FC00FF 100%);
 
     </div>
 
-
-
-
-
-    <!-- footer -->
-
-    <!-- footer -->
-
-    <div class="container">
-        <?php
-        include 'footer.php';
-        ?>
-    </div>
-
-    <!-- footer end  -->
-
-
-
-
-    <!-- footer end  -->
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
-    </script>
-
-
-
-</body>
-
-</html>
+    <?php
+    require 'partials/footer.php';
+    ?>
