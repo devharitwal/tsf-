@@ -10,6 +10,12 @@ $database =$db_name;
 
 
 
+
+
+
+
+
+
 // we can specify the database here so that we dont have to change it later
 
 // connection for sql i 

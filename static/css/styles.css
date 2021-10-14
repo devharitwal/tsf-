@@ -141,7 +141,8 @@ html {
     padding-inline: 2.25em;
 
 
-    background-color: white;
+    background-color: #FFC0CB;
+    color: black;
 }
 
 .login-btn:hover {
@@ -153,9 +154,12 @@ html {
 
 .signup-btn:hover {
     transition: ease-in-out 0.25s;
-
+    background-color: #FF033E;
 
     color: white;
+
+
+
 
 }
 
@@ -165,6 +169,33 @@ html {
 #username {
     padding: 1.0em;
 }
+
+
+#signup_email {
+
+
+    text-align: left;
+}
+
+
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.form_container img {
+    width: 50%;
+    height: 50vh;
+}
+
+
+
+#card-image {
+    width: 500px;
+}
+
 
 #password {
     padding: 1.0em;

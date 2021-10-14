@@ -1,4 +1,6 @@
-<!-- include header , navbar  -->
+<!--login logic  -->
+
+
 
 
 
@@ -39,20 +41,22 @@ require  "partials/navbar.php";
 
 
                     <div class="form pt-4">
-                        <form action="#">
+                        <form action="login.php" method="POST">
                             <input type="email" required name="email" id="username" placeholder="Email">
                             <input type="password" required name="password" id="password" placeholder="Password">
 
+
+                            <div class="pt-3" id="privacy"><a href="#">Privacy</a>
+                                & <a href="#"> Terms of Service</a>
+                            </div>
+                            <button name="login_btn" class=" btn text-white mt-4 login-btn" type="submit">
+                                Login
+                            </button>
+
+
+
                         </form>
                     </div>
-
-                    <div class="pt-3" id="privacy"><a href="#">Privacy</a>
-                        & <a href="#"> Terms of Service</a>
-                    </div>
-
-                    <a href="#" class="btn text-white mt-4 login-btn">
-                        Login
-                    </a>
 
 
 
