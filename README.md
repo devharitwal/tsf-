@@ -1,30 +1,82 @@
- # TSF BASIC BANKING SYSTEM 
-The project is the part of The Sparks Foundation Internship #GRIP APRIL 2021 Batch. 
+
+# Basic Banking Management
+
+This is a Basic Banking Management application implemented in php and mySQL. 
 
 
-# TECH USED
-
-FRONTEND   <br>HTML <br> CSS  <br>  JS  <br> 
-
-SCRIPTING    <br> JS <br> PHP  <br>  
-BACKEND     <br>  mysql  <br>  mysqli  <br>  phpmyadmin (for creating and managing databases)  <br> 
+The project was the part of The Sparks Foundation Internship #GRIP APRIL 2021 Batch.
 
 
-HOSTING  <br >000webhostapp   <br> 
+## Authors
 
-## Link
+- [@devharitwal](https://github.com/devharitwal)
+
+  
+## Feedback
+
+If you have any feedback, please reach out to me at https://www.linkedin.com/in/devharitwal/
+
+  
+## FAQ
+
+#### How to run? 
+ Download XAMPP if you haven't done it yet. Clone the project, extract and place inside the ` xampp` > `htdocs`
+
+ Start the local developement server using `xampp control panel` voila you can see  it on localhost. 
+
+
+
+#### Facing Database error?
+
+`import` database into `phpmyadmin` and it shall work just fine.
+
+
+
+
+  
+## Tech Stack
+
+**Client:** HTML5, CSS3, JS, Bootstrap 4, Jquery
+
+**Server:** PHP
+
+
+**Database:** MySQL
+
+
+
+  
+## Demo
 https://uncomposable-societ.000webhostapp.com/tsf/index.php
 
 
 
-![homepage](https://user-images.githubusercontent.com/48864859/115297016-52f78500-a179-11eb-8483-0174f136304f.png)
+
+
+  
+## Contributing
+
+Contributions are always welcome!
+
+Please adhere to `code of conduct`
+
+`Professional Behavior ` 
+
+`Inclusive environment that respects all contributions.` 
 
 
 
 
 
 
+  
+## 🔗 Links
 
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/devharitwal/)
 
+  
+## Screenshots
 
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+  
