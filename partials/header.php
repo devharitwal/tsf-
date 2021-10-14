@@ -19,7 +19,7 @@
 
 
     <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/transfer.css">
+
 
 
 

@@ -1,12 +1,18 @@
 <?php
 
 require "partials/header.php";
+
+
+
+
+
+
 ?>
 
 
 
 <body>
-
+    <link rel="stylesheet" href="static/css/transfer.css">
 
 
     <?php
