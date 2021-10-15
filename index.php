@@ -2,12 +2,6 @@
      require "partials/navbar.php";
 ?>
 
-
-
-
-
-
-
 <!--  layout  -->
 <section id="hero">
 

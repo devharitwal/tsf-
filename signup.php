@@ -1,20 +1,7 @@
 <?php
-
-
-
-
 require "partials/header.php";
 require "partials/navbar.php";
-
-
-
 ?>
-
-
-
-
-
-
 <?php
 
 // signup logic
@@ -25,18 +12,23 @@ require "config/config.php";
 
 if (isset($_POST['signup_btn'])) {
     $username = $_POST['email'];
-    $password = md5($_POST['password']);
+    $password = ($_POST['password']);
+
+
+    $hashed_pass = password_hash($password, PASSWORD_DEFAULT);
+
+
 
 
     if (!empty(trim($username))) {   //  sql to insert data into db 
 
         if (true) {
 
-            $signup_query = "INSERT INTO `signup_info`(`email`, `password`) VALUES ('[$username]','[$password]')";
-           
+            $signup_query = "INSERT INTO `signup_info`(`email`, `password`) VALUES ('[$username]','[$hashed_pass]')";
+
             $result = mysqli_query($conn, $signup_query);
-            
-          
+
+
 
             if (!$result) {
                 echo '        
@@ -47,20 +39,11 @@ if (isset($_POST['signup_btn'])) {
                  </div>
                 </div>     
                  ';
-            }
-         
-            else
-            {
+            } else {
                 header('Location:login.php');
                 die();
-         
             }
-
-          
-
-        } 
-    
-
+        }
     }
     // username empty check 
     else {
@@ -151,4 +134,4 @@ if (isset($_POST['signup_btn'])) {
 
 
 <?php require "partials/footer.php";
- ?>
+?>

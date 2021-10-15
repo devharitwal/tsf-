@@ -1,23 +1,85 @@
 <!--login logic  -->
+<?php
+require "partials/header.php";
+require  "partials/navbar.php";
 
+require_once "config/config.php";
 
-
-
-
-
+?>
+<!--  login logic  -->
 
 <?php 
 
+if(isset($_POST['login_btn']))
+{
+  
+    $username = $_POST['email'];
+    $password = ($_POST['password']);
+    
+    // sql to find the username 
+    $user_finder = "SELECT * FROM `signup_info` WHERE email = '[$username]'";
+    $result  = mysqli_query($conn,$user_finder);
+    
+    $nums= mysqli_num_rows($result);
+
+    // if the system finds out the user then you can compare the hash 
+
+    if($nums==1)
+    {
+    
+        while ($row = mysqli_fetch_assoc($result))
+        {
+         
+              
+            if(password_verify($password,$row['password']))
+            {
+                $login =true;
+                session_start();
+                $_SESSION['loggedin'] =true;
+                $_SESSION['username'] = $username;
+                header('location:index.php');
+            }
 
 
-require "partials/header.php";
+
+        }
+
+    }
+    else
+    {   
+       echo '
+       
+       
+       <div class= "container">
+       <div class="alert alert-danger alert-dismissible fade show">
+           <strong>Invalid credentials!</strong> Check your username and password
+               
+       </div>
+   </div>
+       
+       
+       ';
+
+    }
+       
 
 
-require  "partials/navbar.php";
+    
+
+}
 
 
 
+   
 ?>
+
+
+
+
+
+
+
+
 
 
 <div class="container d-flex justify-content-center pt-4 mt-4">
@@ -94,4 +156,4 @@ require  "partials/navbar.php";
 
 
 <?php require "partials/footer.php";
- ?>
+?>
