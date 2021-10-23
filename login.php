@@ -8,69 +8,68 @@ require_once "config/config.php";
 ?>
 <!--  login logic  -->
 
-<?php 
+<?php
 
-if(isset($_POST['login_btn']))
-{
-  
-    $username = $_POST['email'];
-    $password = ($_POST['password']);
-    
+
+
+
+// if the method == post then do the login logic and addd sessions etc, otherwise
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
+
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+
+    $hashed_pass = md5($password);
+
+
+    // login logic here the
+
     // sql to find the username 
-    $user_finder = "SELECT * FROM `signup_info` WHERE email = '[$username]'";
-    $result  = mysqli_query($conn,$user_finder);
-    
-    $nums= mysqli_num_rows($result);
+    $user_finder = "SELECT * FROM `signup_info` WHERE email = '$email'";
+    $result = mysqli_query($conn, $user_finder);
+
+    $nums = mysqli_num_rows($result);
 
     // if the system finds out the user then you can compare the hash 
 
-    if($nums==1)
-    {
-    
-        while ($row = mysqli_fetch_assoc($result))
-        {
-         
-              
-            if(password_verify($password,$row['password']))
-            {
-                $login =true;
+    if ($nums == 1) {
+        echo "username found in signupinfo";
+
+        while ($row = mysqli_fetch_assoc($result)) {
+
+
+            if (($hashed_pass == $row['password'])) {
+
+
+                $login = true;
                 session_start();
-                $_SESSION['loggedin'] =true;
+                $_SESSION['loggedin'] = true;
+
                 $_SESSION['username'] = $username;
-                header('location:index.php');
+                header('Location: index.php');
+            } else {
+
+                echo '
+       
+       
+                <div class= "container">
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <strong>Invalid credentials!</strong> Check your username and password
+                        
+                </div>
+            </div>
+                
+                
+                ';
             }
-
-
-
         }
-
     }
-    else
-    {   
-       echo '
-       
-       
-       <div class= "container">
-       <div class="alert alert-danger alert-dismissible fade show">
-           <strong>Invalid credentials!</strong> Check your username and password
-               
-       </div>
-   </div>
-       
-       
-       ';
-
-    }
-       
-
-
-    
-
 }
 
 
-
-   
 ?>
 
 
@@ -104,7 +103,7 @@ if(isset($_POST['login_btn']))
 
                     <div class="form pt-4">
                         <form action="login.php" method="POST">
-                            <input type="email" required name="email" id="username" placeholder="Email">
+                            <input type="email" required name="email" id="email" placeholder="Email">
                             <input type="password" required name="password" id="password" placeholder="Password">
 
 

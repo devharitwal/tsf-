@@ -12,10 +12,12 @@ require "config/config.php";
 
 if (isset($_POST['signup_btn'])) {
     $username = $_POST['email'];
-    $password = ($_POST['password']);
+    $password = $_POST['password'];
 
 
-    $hashed_pass = password_hash($password, PASSWORD_DEFAULT);
+$hashed_pass = md5($password);
+
+
 
 
 
@@ -24,7 +26,7 @@ if (isset($_POST['signup_btn'])) {
 
         if (true) {
 
-            $signup_query = "INSERT INTO `signup_info`(`email`, `password`) VALUES ('[$username]','[$hashed_pass]')";
+            $signup_query = "INSERT INTO `signup_info`(`email`, `password`) VALUES ('$username','$hashed_pass')";
 
             $result = mysqli_query($conn, $signup_query);
 
