@@ -26,7 +26,7 @@ require "partials/header.php";
     ?>
 
     <!-- take the data from contacts db and then print the values -->
-    <div class="container">
+    <div class="container ">
         <div class="jumbotron " style="background-color: #fff;">
 
             <div class="p-4" style=" background-color:#fff">
@@ -39,13 +39,12 @@ require "partials/header.php";
 
             <hr class="my-4">
             <!-- all the transactions fetched from db -->
-            <div class="container-md   p-1">
-                <table class="table border">
+            <div class="  w-100">
+                <table class="table  text-center  w-100 border">
                     <thead>
                         <tr style="color: #fff; background-color: #6c7ae0; ">
-
                             <div class="row">
-                                <div class="col-lg-6 md-3">
+                                <div class="col-lg-6">
                                     <th scope="col">Amount</th>
                                 </div>
 
@@ -58,21 +57,35 @@ require "partials/header.php";
                         </tr>
                     </thead>
                     <tbody>
+
+
                         <?php
-                        // sql statement to get the data from database 
 
 
                         while ($row = mysqli_fetch_assoc($result)) {
+                            // get the upi id and amount 
 
                             $upis = $row['upi'];
                             $amount = $row['amount'];
 
-                            echo " <tr>
-                                 <td>  $amount  </td>
-                                <td> $upis </td> 
-                                </tr>";
+
+                            echo "
+                        
+                        
+                        <tr class ='h-25'>
+
+
+                        <td> $upis</td>
+                        <td>$amount</td>
+                    </tr>
+                        ";
                         }
                         ?>
+
+
+
+
+
                     </tbody>
                 </table>
 
@@ -92,5 +105,5 @@ require "partials/header.php";
 
     <?php
 
-        include 'partials/footer.php';
-        ?>
+    include 'partials/footer.php';
+    ?>

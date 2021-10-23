@@ -1,4 +1,9 @@
 <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="static/js/app.js"></script>
+
+
 
     <div class="container nav-container ">
 
@@ -59,12 +64,6 @@
             </div>
 
 
-            <!-- 
-        <div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/riajulislam"
-                    title="riajulislam">riajulislam</a> from <a href="https://www.flaticon.com/"
-                    title="Flaticon">www.flaticon.com</a></div>
-        </div> -->
 
 
 

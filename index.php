@@ -44,39 +44,43 @@
 
 <!--  cover video -->
 
+<section id="actions">
 
-<div class=" container p-3">
-    <div class="row ">
-        <div class="col-sm-6 col-lg-6">
-            <div class="card power p-4">
-                <div class="card-body text-white ">
+    <div class=" container p-3">
+        <div class="row ">
+            <div class="col-sm-6 col-lg-6">
+                <div class="card power p-4">
+                    <div class="card-body text-white ">
 
-                    <h3 class="  card-title  mb-4">Powering your ideas.
-                    </h3>
-                    <p class="  card-text ">The simple way to send or receive money with anyone
-                    </p>
-                    <a href="transfer.php" class=" btn  btn-light  ">Get Started </a>
+                        <h3 class="  card-title  mb-4">Powering your ideas.
+                        </h3>
+                        <p class="  card-text ">The simple way to send or receive money with anyone
+                        </p>
+                        <a href="transfer.php" class=" btn  btn-light  ">Get Started </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-sm-6 col-lg-6">
-            <div class="card  bg-warning p-4">
-                <div class="card-body text-white ">
+            <div class="col-sm-6 col-lg-6">
+                <div class="card  bg-warning p-4">
+                    <div class="card-body text-white ">
 
-                    <h3 class="  card-title  mb-4">Take control of your money .
-                    </h3>
-                    <p class="  card-text ">The simple way to send or receive money with anyone
-                    </p>
-                    <a href="dashboard.php" class=" btn btn-light "> Manage </a>
+                        <h3 class="  card-title  mb-4">Take control of your money .
+                        </h3>
+                        <p class="  card-text ">The simple way to send or receive money with anyone
+                        </p>
+                        <a href="dashboard.php" class=" btn btn-light "> Manage </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
+
 </section>
+
+
 
 
 

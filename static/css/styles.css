@@ -12,6 +12,8 @@ html {
 
 
 
+
+
 .sticky {
     position: sticky;
     top: 15px;
@@ -219,12 +221,8 @@ html {
 
 
 .table {
-    width: 550px;
     height: 150px;
-    overflow: scroll;
-
 }
-
 
 
 /* footer  */
