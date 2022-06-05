@@ -1,82 +1,62 @@
 /*  index  */
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-
 
 #hero .hero-div {
-    height: 70vh;
+  height: 70vh;
 }
-
-
-
 
 .sticky {
-    position: sticky;
-    top: 15px;
+  position: sticky;
+  top: 15px;
 }
 
-
 #sally15 {
-    height: auto;
-    width: 50%;
-
+  height: auto;
+  width: 50%;
 }
 
 .night-mode {
-    background-color: black;
+  background-color: black;
 }
-
-
 
 /* hero video  */
 
 .hero-video-section {
-
-
-    position: relative;
-    z-index: -1;
-
+  position: relative;
+  z-index: -1;
 }
-
-
 
 .hero-div video {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-
-
-
 #hero-video-heading {
-    position: absolute;
-    z-index: 100;
-    left: 25%;
-    top: 25%;
+  position: absolute;
+  z-index: 100;
+  left: 25%;
+  top: 25%;
 
-    color: white;
-    padding: 7px;
+  color: white;
+  padding: 7px;
 
-
-    font-size: 15rem;
+  font-size: 15rem;
 }
 
 #hero-video-para {
-    position: absolute;
-    z-index: 100;
-    left: 40%;
-    top: 70%;
+  position: absolute;
+  z-index: 100;
+  left: 40%;
+  top: 70%;
 
-    color: white;
+  color: white;
 
-    padding: 7px;
+  padding: 7px;
 
-
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
-
 
 /* .color-overlay {
     position: absolute;
@@ -86,158 +66,121 @@ html {
 
 } */
 
-
-
-
-
 .power {
-
-
-    background: #00d2ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3a7bd5, #00d2ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+  background: #00d2ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*  login form */
 #form-image {
-    max-width: 500px;
-    max-height: auto;
+  max-width: 500px;
+  max-height: auto;
 }
 
 #privacy {
-
-    font-size: 14px;
-
+  font-size: 14px;
 }
-
 
 .login-form-elements {
-    height: 100vh;
-
+  height: 100vh;
 }
 
-
 .form-para {
-    width: 400px;
+  width: 400px;
 }
 
 .login-btn {
+  padding-inline: 2.65em;
 
-    padding-inline: 2.65em;
-
-
-    background-color: black;
+  background-color: black;
 }
 
 .signup-btn {
+  padding-inline: 2.25em;
 
-
-    padding-inline: 2.25em;
-
-
-    background-color: #FFC0CB;
-    color: black;
+  background-color: #ffc0cb;
+  color: black;
 }
 
 .login-btn:hover {
-    transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.25s;
 
-
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 .signup-btn:hover {
-    transition: ease-in-out 0.25s;
-    background-color: #FF033E;
+  transition: ease-in-out 0.25s;
+  background-color: #ff033e;
 
-    color: white;
-
-
-
-
+  color: white;
 }
-
 
 /*  form inputs  */
 
 #username {
-    padding: 1.0em;
+  padding: 1em;
 }
-
 
 #signup_email {
-
-
-    text-align: left;
+  text-align: left;
 }
 
-
 .form_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 
 .form_container img {
-    width: 50%;
-    height: 50vh;
+  width: 50%;
+  height: 50vh;
 }
-
-
 
 #card-image {
-    width: 500px;
+  width: 500px;
 }
 
+#username {
+  padding: 1em;
+}
 
 #password {
-    padding: 1.0em;
+  padding: 1em;
 }
 
 /* page footer  */
 
 #footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    /* Height of the footer */
-    background: #6cf;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Height of the footer */
+  background: #6cf;
 }
-
 
 /*  dashboard  */
 
 /*  transaction table  */
 
-
 .table {
-    width: 550px;
-    height: 150px;
-    overflow: scroll;
-
+  width: 550px;
+  height: 150px;
+  overflow: scroll;
 }
-
-
 
 /* footer  */
 
-
-
 .footer-div {
-    background-color: black;
-    color: white;
-
+  background-color: black;
+  color: white;
 }
 
-
 footer {
-    color: white;
+  color: white;
 }
